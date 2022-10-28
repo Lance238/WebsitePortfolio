@@ -16,34 +16,23 @@
   </div>
 </main>
 
-<form action=mailto:lance.palogan@ontariotechu.net ?subject=email Form method="post" enctype="text/plain" name="form">
+<div class="contactBox">
+    <form action=mailto:lance.palogan@ontariotechu.net ?subject=email Form method="post" enctype="text/plain" name="form">
+        
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
-    <p>
-        <label for="name">Name</label>
-        <input type="text" name="name" placeholder="Enter your Name" size="32" required>
-    </p>   
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+  
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
 
-    <p>
-        <label for="email">Email</label>
-        <input name="email" type="email" size="40" required>
-    </p>
-            
-    <p>
-        <label for="phone">Phone number</label>
-        <!--Format for phone number-->
-        <input name="phone" type="tel" size="40" required pattern = "[0-9]{3}-[0-9]{3}-[0-9]{4}">
-    </p> 
-
-    <p>
-        <label for="comments">Comments</label><br>
-        <textarea name="comments" cols="50" rows="6"></textarea>
-    </p>
-
-    <p>
-        <input type="submit" value="Click here to submit the form"/>
-    </p>
-
-</form>
+    <input type="submit" value="Submit">
+  
+    </form>
+  </div>
+</main>
 
   <!--Script files-->
   <script src = "/Scripts/app.js"></script>
